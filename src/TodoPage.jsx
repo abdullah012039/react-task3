@@ -11,24 +11,20 @@ const TodoPage = () => {
     const [edit, setEdit] = useState(false)
     const [index2, setIndex] = useState(0)
     const DoneFunction = (index) => {
-        // rempve the todo by index and add it to the done list
         setDone([...done, todos[index]])
         setTodos(todos.filter(todo => todo != todos[index]))
         console.log(done)
         console.log(todos)
     }
     const DeleteFunction = (index) => { 
-        // remove the todo from the list
         setTodos(todos.filter(todo => todo != todos[index]))
     }
     const EditFunction = (index) => {
-        // edit the todo by input to the todo and change the add button to update button
         setInput(todos[index])
         setIndex(index)
         setEdit(true)
     }
     const UpdateFunction = (index) => {
-        // update the todo by index
         setTodos(todos.map((todo,i) => i == index ? input : todo))
         setEdit(false)
     }
