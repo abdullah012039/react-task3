@@ -1,0 +1,29 @@
+.page{
+    position: relative;
+    width: 100%;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: auto;
+}
+.list{
+    margin: 50px auto;
+    width: 400px;
+    min-height: 300px;
+    background-color: transition;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 0 rgba(255,255,255, 0.1);
+    padding: 20px;
+}
+.list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 6px 10px 0 rgba(255,255,255, 0.1);
+    transition: all 0.3s ease;
+}
